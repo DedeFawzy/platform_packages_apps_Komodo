@@ -112,7 +112,7 @@
 
     <!-- Heads up timeout -->
     <string name="heads_up_time_out_title">Время показа</string>
-    <string name="heads_up_time_out_summary">Всплывающие уведомления будут отображаться в течении<xliff:g id="number">%d</xliff:g> секунд</string>
+    <string name="heads_up_time_out_summary">Всплывающие уведомления будут отображаться в течение <xliff:g id="number">%d</xliff:g> секунд</string>
     <string name="heads_up_time_out_2sec">2 секунды</string>
     <string name="heads_up_time_out_4sec">4 секунды</string>
     <string name="heads_up_time_out_5sec">5 секунд</string>
@@ -123,7 +123,7 @@
     <!-- Heads up snooze -->
     <string name="heads_up_snooze_title">Время отсрочки</string>
     <string name="heads_up_snooze_summary_one_minute">Сдвигать вверх всплывающие уведомления этого приложения на 1 минуту</string>
-    <string name="heads_up_snooze_summary">Сдвигать вверх всплывающие уведомления из этих приложений на<xliff:g id="number">%d</xliff:g> минут</string>
+    <string name="heads_up_snooze_summary">Сдвигать вверх всплывающие уведомления из этих приложений на <xliff:g id="number">%d</xliff:g> минут</string>
     <string name="heads_up_snooze_disabled_summary">Таймер отсрочки выключен</string>
     <string name="heads_up_snooze_1min">1 минута</string>
     <string name="heads_up_snooze_5min">5 минут</string>
