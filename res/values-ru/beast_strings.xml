@@ -539,5 +539,9 @@
     <string name="screen_state_on_delay_summary">Отложить действия при включенном экране на указанное количество секунд</string>
     <string name="sysui_qqs_count_title">Маленькие плитки в панели быстрых настроек</string>
 	
+    <!-- Hide arrows in Network Traffic indicators -->
+    <string name="network_traffic_hidearrow">Скрыть стрелки</string>
+    <string name="network_traffic_hidearrow_summary">Скрыть стрелки индикатора трафика</string>
+	
 </resources>
 
