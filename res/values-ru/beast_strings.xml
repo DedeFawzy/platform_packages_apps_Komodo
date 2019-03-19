@@ -543,5 +543,9 @@
     <string name="network_traffic_hidearrow">Скрыть стрелки</string>
     <string name="network_traffic_hidearrow_summary">Скрыть стрелки индикатора трафика</string>
 	
+    <!-- Old mobile icon -->
+    <string name="use_old_mobiletype_title">Старые значки данных</string>
+    <string name="use_old_mobiletype_summary">Отображать значки типа сети передачи данных из старых версий Андроида</string>
+	
 </resources>
 
