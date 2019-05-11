@@ -526,6 +526,7 @@
     <string name="lockscreen_clock_selection_dot">Analog (Dot)</string>
     <string name="lockscreen_clock_selection_spectrum">Analog (Spectrum)</string>
     <string name="lockscreen_clock_selection_sneeky">Analog (Sneeky)</string>
+    <string name="lockscreen_clock_selection_text">Android 10 Text Clock</string>
 	
     <!-- Screen off animation -->
     <string name="screen_off_animation_title">Screen off animation</string>
