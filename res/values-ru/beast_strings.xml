@@ -13,7 +13,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Categories -->
-    <string name="animations_title">Анимации</string>
+    <string name="animations_title">Анимация</string>
     <string name="button_title">Кнопки</string>
     <string name="gestures_title">Жесты</string>
     <string name="lockscreen_title">Экран блокировки</string>
@@ -84,7 +84,7 @@
     <string name="flashlight_on_call_always">Мигает всегда</string>
 
     <!-- Battery light -->
-    <string name="light_settings_header">Насройки индикатора уведомлений</string>
+    <string name="light_settings_header">Настройки индикатора уведомлений</string>
     <string name="battery_light_settings">При зарядке аккамулятора</string>
     <string name="battery_light_summary">Дополнительные настройки индиктора батареи</string>
     <string name="battery_light_enable">Включено</string>
@@ -104,7 +104,7 @@
     <string name="add_heads_up_package">Добавлено приложение</string>
     <string name="add_heads_up_stoplist_summary">Отключить всплывающие уведомления в этих приложениях</string>
     <string name="add_heads_up_blacklist_summary">Отключить всплывающие уведомления из этих приложений</string>
-    <string name="heads_up_stoplist_title">Stop-список</string>
+    <string name="heads_up_stoplist_title">Стоп-список</string>
     <string name="heads_up_blacklist_title">Черный список</string>
     <string name="profile_choose_app">Выбрать приложение</string>
     <string name="dialog_delete_title">Удалить</string>
@@ -351,7 +351,7 @@
     <string name="qs_brightness_position_bottom_summary">Показать регулятор яркости внизу панели быстрых настроек</string>
 	
     <!-- OP Gestures -->
-    <string name="gesture_settings_title">Omni OP Жесты</string>
+    <string name="gesture_settings_title">OP Жесты</string>
     <string name="gesture_settings_info_new">Панель навигации должна быть отключена!\n\nДоступные жесты:\n\nНазад\n- Свайп вверх слева или справа\n\nДомой\n- Свайп вверх по центру экрана\n\nНедавние приложения\n- Свайп вверх по центру экрана и удержание\n\nПоследнее приложение\n- Короткий свайп вверх и удержание.</string>
     <string name="use_bottom_gesture_title">Использовать жесты</string>
     <string name="use_bottom_gesture_summary">Свайп вверх для навигации</string>
