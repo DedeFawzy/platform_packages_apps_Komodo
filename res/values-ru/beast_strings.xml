@@ -88,7 +88,7 @@
     <string name="battery_light_settings">При зарядке аккамулятора</string>
     <string name="battery_light_summary">Дополнительные настройки индиктора батареи</string>
     <string name="battery_light_enable">Включено</string>
-    <string name="battery_light_allow_on_dnd_title">Индикатор батареии в режиме "Не беспокоить"</string>
+    <string name="battery_light_allow_on_dnd_title">Индикатор батареи в режиме "Не беспокоить"</string>
     <string name="battery_light_low_blinking_title">Мигать при низком заряде</string>
     <string name="battery_light_cat">Цвет индикатора при зарядке батареи</string>
     <string name="battery_light_low_color">Низкий заряд</string>
