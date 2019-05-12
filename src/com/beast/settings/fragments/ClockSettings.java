@@ -70,7 +70,7 @@ public class ClockSettings extends SettingsPreferenceFragment implements
     private ListPreference mClockDateDisplay;
     private ListPreference mClockDateStyle;
     private ListPreference mClockDateFormat;
-    private SystemSettingSeekBarPreference mClockSize;
+    private CustomSeekBarPreference mClockSize;
     private ListPreference mClockFontStyle;
 
     @Override
@@ -113,7 +113,7 @@ public class ClockSettings extends SettingsPreferenceFragment implements
             mStatusBarAmPm.setOnPreferenceChangeListener(this);
         }
 		
-        mClockSize = (SystemSettingSeekBarPreference) findPreference(STATUS_BAR_CLOCK_SIZE);
+        mClockSize = (CustomSeekBarPreference) findPreference(STATUS_BAR_CLOCK_SIZE);
         int clockSize = Settings.System.getInt(resolver,
                 Settings.System.STATUS_BAR_CLOCK_SIZE, 14);
         mClockSize.setValue(clockSize / 1);
