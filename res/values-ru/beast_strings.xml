@@ -571,5 +571,8 @@
     <string name="lockscreen_clock_align1">По центру</string>
     <string name="lockscreen_clock_align2">Справа</string>
 	
+    <string name="status_bar_clock_font_style_title">Стиль шрифта</string>
+    <string name="status_bar_clock_font_size_title">Размер шрифта</string>
+	
 </resources>
 

@@ -579,6 +579,9 @@
     <string name="lockscreen_clock_align0">Left</string>
     <string name="lockscreen_clock_align1">Center</string>
     <string name="lockscreen_clock_align2">Right</string>
+
+    <string name="status_bar_clock_font_style_title">Font style</string>
+    <string name="status_bar_clock_font_size_title">Font size</string>
 	
 </resources>
 
