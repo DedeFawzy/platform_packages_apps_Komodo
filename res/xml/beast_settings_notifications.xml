@@ -14,6 +14,12 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
 	android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+	
+         <com.beast.settings.preferences.SystemSettingSwitchPreference
+            android:key="vibration_on_charge_state_changed"
+            android:title="@string/vibration_on_charge_state_changed_title"
+            android:summary="@string/vibration_on_charge_state_changed_summary"
+            android:defaultValue="true" />
 
         <!-- Flashlight on incoming calls -->
         <ListPreference

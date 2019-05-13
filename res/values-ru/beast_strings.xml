@@ -574,5 +574,9 @@
     <string name="status_bar_clock_font_style_title">Стиль шрифта</string>
     <string name="status_bar_clock_font_size_title">Размер шрифта</string>
 	
+    <!-- Charging options -->
+    <string name="vibration_on_charge_state_changed_title">Вибрация при подключении/отключении</string>
+    <string name="vibration_on_charge_state_changed_summary">Вибрация при подключении кабеля</string>
+	
 </resources>
 
