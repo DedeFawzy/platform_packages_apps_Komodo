@@ -15,6 +15,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/system_animation_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+	
+    <com.beast.settings.preferences.SystemSettingSwitchPreference
+            android:key="animation_no_override"
+            android:title="@string/title_animation_no_override"
+            android:summary="@string/summary_animation_no_override"
+            android:defaultValue="false" />
 
         <ListPreference
             android:key="activity_open"
