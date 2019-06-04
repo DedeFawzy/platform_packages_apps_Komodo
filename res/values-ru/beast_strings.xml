@@ -578,5 +578,9 @@
     <string name="vibration_on_charge_state_changed_title">Вибро при подключении/отключении</string>
     <string name="vibration_on_charge_state_changed_summary">Вибрация при подключении и отключении кабеля USB.</string>
 	
+    <!-- Media art -->
+    <string name="media_art_title">Медиа обложка</string>
+    <string name="media_art_summary">Отображать медиа обложку на экране блокировки</string>
+	
 </resources>
 
