@@ -582,5 +582,8 @@
     <string name="media_art_title">Медиа обложка</string>
     <string name="media_art_summary">Отображать медиа обложку на экране блокировки</string>
 	
+    <string name="lock_screen_weather_title">Информация о погоде</string>
+    <string name="lock_screen_weather_summary">Отображать текущую информацию о погоде на экране блокировки</string>
+	
 </resources>
 
