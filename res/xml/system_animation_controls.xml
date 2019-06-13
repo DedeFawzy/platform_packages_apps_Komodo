@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-     Copyright (C) 2019 BeastROMs
+     Copyright (C) 2019 KomodOS Rom
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
@@ -16,7 +16,7 @@
     android:title="@string/system_animation_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 	
-		<com.beast.settings.preferences.CustomSeekBarPreference
+		<com.komodo.settings.preferences.CustomSeekBarPreference
 			android:key="animation_duration"
 			android:max="1500"
 			android:persistent="false"
@@ -25,7 +25,7 @@
 			settings:units="ms"
 			settings:interval="50"/>
 	
-    <com.beast.settings.preferences.SystemSettingSwitchPreference
+    <com.komodo.settings.preferences.SystemSettingSwitchPreference
             android:key="animation_no_override"
             android:title="@string/title_animation_no_override"
             android:summary="@string/summary_animation_no_override"
