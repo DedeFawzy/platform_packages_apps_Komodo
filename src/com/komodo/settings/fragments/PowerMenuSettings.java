@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.content.Context;
 import android.content.ContentResolver;
@@ -36,7 +36,7 @@ import android.support.annotation.NonNull;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.beast.settings.preferences.Utils;
+import com.komodo.settings.preferences.Utils;
 
 import java.util.Arrays;
 import java.util.ArrayList;
@@ -54,7 +54,7 @@ public class PowerMenuSettings extends SettingsPreferenceFragment
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.beast_settings_power);
+        addPreferencesFromResource(R.xml.komodo_settings_power);
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
@@ -83,7 +83,7 @@ public class PowerMenuSettings extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
 }

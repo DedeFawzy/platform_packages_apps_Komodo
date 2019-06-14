@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -31,7 +31,7 @@ import android.provider.SearchIndexableResource;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 
-import com.beast.settings.preferences.CustomSeekBarPreference;
+import com.komodo.settings.preferences.CustomSeekBarPreference;
 
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -51,7 +51,7 @@ public class OmniGestureSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.BEAST;
+        return MetricsEvent.KOMODO;
     }
 
     public void onCreate(Bundle savedInstanceState) {

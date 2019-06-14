@@ -1,4 +1,4 @@
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
  import com.android.internal.logging.nano.MetricsProto;
  import android.os.Bundle;
 import android.content.Intent;
@@ -25,7 +25,7 @@ import java.util.ArrayList;
      @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-         addPreferencesFromResource(R.xml.beast_settings_quicksettings);
+         addPreferencesFromResource(R.xml.komodo_settings_quicksettings);
          PreferenceScreen prefScreen = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
          }
@@ -35,6 +35,6 @@ import java.util.ArrayList;
     }
      @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
  }

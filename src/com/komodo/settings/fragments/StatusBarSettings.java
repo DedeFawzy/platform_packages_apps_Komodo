@@ -1,4 +1,4 @@
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 import android.os.Bundle;
@@ -26,9 +26,9 @@ import android.text.TextUtils;
 import android.view.View;
 
 import com.android.settings.SettingsPreferenceFragment;
-import com.beast.settings.preferences.CustomSeekBarPreference;
-import com.beast.settings.preferences.SecureSettingSwitchPreference;
-import com.beast.settings.preferences.SystemSettingSwitchPreference;
+import com.komodo.settings.preferences.CustomSeekBarPreference;
+import com.komodo.settings.preferences.SecureSettingSwitchPreference;
+import com.komodo.settings.preferences.SystemSettingSwitchPreference;
 import com.android.settings.Utils;
 import android.util.Log;
 import java.util.List;
@@ -53,7 +53,7 @@ import java.util.Collections;
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.beast_settings_statusbar);
+        addPreferencesFromResource(R.xml.komodo_settings_statusbar);
         PreferenceScreen prefSet = getPreferenceScreen();
 
         final ContentResolver resolver = getActivity().getContentResolver();
@@ -167,6 +167,6 @@ import java.util.Collections;
 
      @Override
      public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
  }

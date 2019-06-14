@@ -15,7 +15,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.app.Activity;
 import android.content.Context;
@@ -35,8 +35,8 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.beast.settings.preferences.Utils;
-import com.beast.settings.preferences.CustomSeekBarPreference;
+import com.komodo.settings.preferences.Utils;
+import com.komodo.settings.preferences.CustomSeekBarPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -65,7 +65,7 @@ import com.android.internal.logging.nano.MetricsProto;
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.beast_settings_lockscreen);
+        addPreferencesFromResource(R.xml.komodo_settings_lockscreen);
          ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefScreen = getPreferenceScreen();
         Resources resources = getResources();
@@ -167,7 +167,7 @@ import com.android.internal.logging.nano.MetricsProto;
     }
      @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
 }

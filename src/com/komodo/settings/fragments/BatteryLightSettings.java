@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -27,7 +27,7 @@ import android.provider.Settings;
 
 import com.android.internal.logging.nano.MetricsProto;
 
-import com.beast.settings.preferences.SystemSettingSwitchPreference;
+import com.komodo.settings.preferences.SystemSettingSwitchPreference;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
@@ -101,7 +101,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.komodo;
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

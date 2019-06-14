@@ -1,4 +1,4 @@
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import com.android.internal.logging.nano.MetricsProto;
 
@@ -20,7 +20,7 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
 
-        addPreferencesFromResource(R.xml.beast_settings_volume);
+        addPreferencesFromResource(R.xml.komodo_settings_volume);
 
     }
 
@@ -32,6 +32,6 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 }

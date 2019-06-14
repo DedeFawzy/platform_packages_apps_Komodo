@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.beast.settings.fragments.ui;
+package com.komodo.settings.fragments.ui;
 
 import android.app.Activity;
 import android.content.ContentResolver;
@@ -31,10 +31,10 @@ import android.provider.Settings;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.logging.nano.MetricsProto;
-import com.android.internal.util.beast.AwesomeAnimationHelper;
+import com.android.internal.util.komodo.AwesomeAnimationHelper;
 
-import com.beast.settings.preferences.CustomSeekBarPreference;
-import com.beast.settings.R;
+import com.komodo.settings.preferences.CustomSeekBarPreference;
+import com.komodo.settings.R;
 
 import java.util.Arrays;
 
@@ -298,6 +298,6 @@ public class AnimationControls extends SettingsPreferenceFragment implements OnP
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 }

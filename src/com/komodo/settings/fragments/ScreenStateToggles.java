@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -36,8 +36,8 @@ import android.content.Intent;
 import android.util.Log;
 import android.net.ConnectivityManager;
 
-import com.beast.settings.R;
-import com.beast.settings.preferences.CustomSeekBarPreference;
+import com.komodo.settings.R;
+import com.komodo.settings.preferences.CustomSeekBarPreference;
 import com.android.settings.SettingsPreferenceFragment;
 
 import com.android.internal.logging.nano.MetricsProto;
@@ -160,7 +160,7 @@ public class ScreenStateToggles extends SettingsPreferenceFragment
                     Settings.Secure.START_SCREEN_STATE_SERVICE, value ? 1 : 0, UserHandle.USER_CURRENT);
 
             Intent service = (new Intent())
-                .setClassName("com.android.systemui", "com.android.systemui.beast.screenstate.ScreenStateService");
+                .setClassName("com.android.systemui", "com.android.systemui.komodo.screenstate.ScreenStateService");
             if (value) {
                 getActivity().stopService(service);
                 getActivity().startService(service);
@@ -229,13 +229,13 @@ public class ScreenStateToggles extends SettingsPreferenceFragment
 
     private void restartService(){
         Intent service = (new Intent())
-                .setClassName("com.android.systemui", "com.android.systemui.beast.screenstate.ScreenStateService");
+                .setClassName("com.android.systemui", "com.android.systemui.komodo.screenstate.ScreenStateService");
         getActivity().stopService(service);
         getActivity().startService(service);
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 }

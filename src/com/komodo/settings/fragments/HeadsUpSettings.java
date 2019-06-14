@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -40,8 +40,8 @@ import android.widget.ListView;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.beast.settings.preferences.PackageListAdapter;
-import com.beast.settings.preferences.PackageListAdapter.PackageItem;
+import com.komodo.settings.preferences.PackageListAdapter;
+import com.komodo.settings.preferences.PackageListAdapter.PackageItem;
 import android.provider.Settings;
 
 import java.util.ArrayList;
@@ -165,13 +165,13 @@ public class HeadsUpSettings extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
     @Override
     public int getDialogMetricsCategory(int dialogId) {
         if (dialogId == DIALOG_STOPLIST_APPS || dialogId == DIALOG_BLACKLIST_APPS ) {
-            return MetricsProto.MetricsEvent.BEAST;
+            return MetricsProto.MetricsEvent.KOMODO;
         }
         return 0;
     }

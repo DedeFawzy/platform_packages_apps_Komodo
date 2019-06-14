@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.app.AlertDialog;
 import android.content.ContentResolver;
@@ -41,8 +41,8 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-import com.beast.settings.preferences.CustomSeekBarPreference;
-import com.beast.settings.preferences.SystemSettingSwitchPreference;
+import com.komodo.settings.preferences.CustomSeekBarPreference;
+import com.komodo.settings.preferences.SystemSettingSwitchPreference;
 import com.android.internal.logging.nano.MetricsProto;
 
 import java.util.Date;
@@ -156,7 +156,7 @@ public class ClockSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
     @Override

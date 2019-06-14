@@ -1,4 +1,4 @@
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.app.ActionBar;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.hwkeys.ActionUtils;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.beast.settings.preferences.SecureSettingSeekBarPreference;
+import com.komodo.settings.preferences.SecureSettingSeekBarPreference;
 
 public class EdgeGesturesSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
@@ -60,7 +60,7 @@ public class EdgeGesturesSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
     @Override

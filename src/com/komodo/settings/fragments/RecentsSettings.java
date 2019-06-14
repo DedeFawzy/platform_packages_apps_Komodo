@@ -1,4 +1,4 @@
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
  import com.android.internal.logging.nano.MetricsProto;
 import android.app.Activity;
 import android.content.Context;
@@ -17,7 +17,7 @@ import com.android.settings.R;
 import java.util.Arrays;
 import java.util.HashSet;
 import com.android.settings.SettingsPreferenceFragment;
-import com.beast.settings.preferences.Utils;
+import com.komodo.settings.preferences.Utils;
 
 
  public class RecentsSettings extends SettingsPreferenceFragment implements
@@ -36,7 +36,7 @@ import com.beast.settings.preferences.Utils;
      @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-         addPreferencesFromResource(R.xml.beast_settings_recents);
+         addPreferencesFromResource(R.xml.komodo_settings_recents);
          ContentResolver resolver = getActivity().getContentResolver();
 
         // recents component type
@@ -99,6 +99,6 @@ import com.beast.settings.preferences.Utils;
 
      @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 }

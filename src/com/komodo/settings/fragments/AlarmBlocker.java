@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -162,7 +162,7 @@ public class AlarmBlocker extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
     @Override

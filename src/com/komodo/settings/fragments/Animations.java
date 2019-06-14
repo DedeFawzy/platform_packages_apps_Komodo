@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
@@ -37,7 +37,7 @@ import android.widget.Toast;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto; 
 
-import com.beast.settings.R;
+import com.komodo.settings.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -69,7 +69,7 @@ public class Animations extends SettingsPreferenceFragment  implements Preferenc
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.beast_settings_animations);
+        addPreferencesFromResource(R.xml.komodo_settings_animations);
 		
         resolver = getActivity().getContentResolver();
         mContext = getActivity().getApplicationContext();
@@ -151,6 +151,6 @@ public class Animations extends SettingsPreferenceFragment  implements Preferenc
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.komodo;
     }
 }

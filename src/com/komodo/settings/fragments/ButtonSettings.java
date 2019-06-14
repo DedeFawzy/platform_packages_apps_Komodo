@@ -16,7 +16,7 @@
  *
  */
 
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -36,13 +36,13 @@ import com.android.settings.R;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-import com.beast.settings.preferences.CustomSeekBarPreference;
+import com.komodo.settings.preferences.CustomSeekBarPreference;
 
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.internal.util.hwkeys.ActionConstants;
 import com.android.internal.util.hwkeys.ActionUtils;
-import com.beast.settings.preferences.Utils;
-import com.beast.settings.preferences.ActionFragment;
+import com.komodo.settings.preferences.Utils;
+import com.komodo.settings.preferences.ActionFragment;
 
 public class ButtonSettings extends ActionFragment implements
         Preference.OnPreferenceChangeListener{
@@ -80,7 +80,7 @@ public class ButtonSettings extends ActionFragment implements
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        addPreferencesFromResource(R.xml.beast_settings_button);
+        addPreferencesFromResource(R.xml.komodo_settings_button);
 
         final PreferenceScreen prefScreen = getPreferenceScreen();
 		
@@ -213,7 +213,7 @@ public class ButtonSettings extends ActionFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.komodo;
     }
 
 }

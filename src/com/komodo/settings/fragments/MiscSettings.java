@@ -1,4 +1,4 @@
-package com.beast.settings.fragments;
+package com.komodo.settings.fragments;
  import com.android.internal.logging.nano.MetricsProto;
  import android.app.Activity;
 import android.app.AlertDialog;
@@ -26,7 +26,7 @@ import java.util.HashSet;
      @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-         addPreferencesFromResource(R.xml.beast_settings_misc);
+         addPreferencesFromResource(R.xml.komodo_settings_misc);
      }
      @Override
     public boolean onPreferenceChange(Preference preference, Object objValue) {
@@ -34,6 +34,6 @@ import java.util.HashSet;
     }
      @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.BEAST;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 }
