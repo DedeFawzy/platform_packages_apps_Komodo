@@ -29,7 +29,7 @@ import com.komodo.settings.preferences.Utils;
 
 import com.android.settings.SettingsPreferenceFragment;
 
-public class komodoSettings extends SettingsPreferenceFragment {
+public class KomodoSettings extends SettingsPreferenceFragment {
 	
     @Override
     public void onCreate(Bundle icicle) {
@@ -47,7 +47,7 @@ public class komodoSettings extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.komodo;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
     public static void lockCurrentOrientation(Activity activity) {

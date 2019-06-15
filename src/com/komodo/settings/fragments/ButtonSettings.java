@@ -213,7 +213,7 @@ public class ButtonSettings extends ActionFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.komodo;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
 }

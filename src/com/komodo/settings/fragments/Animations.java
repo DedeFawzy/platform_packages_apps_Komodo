@@ -151,6 +151,6 @@ public class Animations extends SettingsPreferenceFragment  implements Preferenc
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.komodo;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 }

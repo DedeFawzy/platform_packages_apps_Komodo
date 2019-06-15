@@ -101,7 +101,7 @@ public class BatteryLightSettings extends SettingsPreferenceFragment implements
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.komodo;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

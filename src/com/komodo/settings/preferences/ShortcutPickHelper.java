@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.kiomodo.settings.preferences;
+package com.komodo.settings.preferences;
 
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -41,7 +41,7 @@ import android.widget.ExpandableListView;
 import android.widget.TextView;
 
 import com.android.settings.R;
-import com.kiomodo.settings.preferences.ShortcutPickHelper.AppExpandableAdapter.GroupInfo;
+import com.komodo.settings.preferences.ShortcutPickHelper.AppExpandableAdapter.GroupInfo;
 
 public class ShortcutPickHelper {
 
