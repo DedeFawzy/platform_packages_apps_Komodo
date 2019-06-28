@@ -28,6 +28,7 @@
     <string name="volume_title">Volume Buttons</string>
     <string name="volume_summary">Volume button tweaks</string>
     <string name="notifications_title">Notifications</string>
+    <string name="fp_lockscreen">Fingerprint</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>

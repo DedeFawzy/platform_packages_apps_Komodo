@@ -26,6 +26,7 @@
     <string name="volume_title">Кнопки громкости</string>
     <string name="volume_summary">Настройки кнопок громкости</string>
     <string name="notifications_title">Уведомления</string>
+    <string name="fp_lockscreen">Fingerprint</string>
 
     <!-- General strings -->
     <string name="ok">OK</string>

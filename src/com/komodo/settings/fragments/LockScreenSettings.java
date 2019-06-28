@@ -49,14 +49,16 @@ import com.android.internal.logging.nano.MetricsProto;
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
     private static final String WEATHER_UNIT = "weather_lockscreen_unit";
     private static final String LOCK_CLOCK_FONTS = "lock_clock_fonts";
-	private static final String LOCK_DATE_FONTS = "lock_date_fonts";
-	private static final String CLOCK_FONT_SIZE = "lockclock_font_size";
+    private static final String LOCK_DATE_FONTS = "lock_date_fonts";
+    private static final String CLOCK_FONT_SIZE = "lockclock_font_size";
     private static final String DATE_FONT_SIZE = "lockdate_font_size";
     private static final String FP_CAT = "fp_category";
+    private static final String FP_UNLOCK_KEYSTORE = "fp_unlock_keystore";
 
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
     private SwitchPreference mFaceUnlock;
+    private SystemSettingSwitchPreference mFpKeystore;
 	
     ListPreference mWeatherUnit;
     ListPreference mLockClockFonts;
@@ -86,6 +88,7 @@ import com.android.internal.logging.nano.MetricsProto;
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
+        mFpKeystore = (SystemSettingSwitchPreference) findPreference(FP_UNLOCK_KEYSTORE);
         if (mFingerprintManager != null && mFingerprintManager.isHardwareDetected()){
         mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));
