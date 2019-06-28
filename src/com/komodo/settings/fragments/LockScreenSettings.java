@@ -34,6 +34,7 @@ import android.support.v7.preference.PreferenceScreen;
 import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.komodo.settings.preferences.SystemSettingSwitchPreference;
 
 import com.komodo.settings.preferences.Utils;
 import com.komodo.settings.preferences.CustomSeekBarPreference;
@@ -51,6 +52,7 @@ import com.android.internal.logging.nano.MetricsProto;
 	private static final String LOCK_DATE_FONTS = "lock_date_fonts";
 	private static final String CLOCK_FONT_SIZE = "lockclock_font_size";
     private static final String DATE_FONT_SIZE = "lockdate_font_size";
+    private static final String FP_CAT = "fp_category";
 
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
@@ -78,15 +80,19 @@ import com.android.internal.logging.nano.MetricsProto;
                     Settings.Secure.FACE_AUTO_UNLOCK, 0) == 1));
             mFaceUnlock.setOnPreferenceChangeListener(this);
         }
+        
+        PreferenceCategory fingerprintCategory = (PreferenceCategory) findPreference(FP_CAT);
+
 
         mFingerprintManager = (FingerprintManager) getActivity().getSystemService(Context.FINGERPRINT_SERVICE);
         mFingerprintVib = (SwitchPreference) findPreference(FINGERPRINT_VIB);
-        if (!mFingerprintManager.isHardwareDetected()){
-            prefScreen.removePreference(mFingerprintVib);
-        } else {
+        if (mFingerprintManager != null && mFingerprintManager.isHardwareDetected()){
         mFingerprintVib.setChecked((Settings.System.getInt(getContentResolver(),
                 Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));
         mFingerprintVib.setOnPreferenceChangeListener(this);
+        } else {
+        fingerprintCategory.removePreference(mFingerprintVib);
+        fingerprintCategory.removePreference(mFpKeystore);
         }
         mWeatherUnit = (ListPreference) findPreference(WEATHER_UNIT);
         mWeatherUnit.setValue(String.valueOf(Settings.System.getInt(
@@ -121,6 +127,11 @@ import com.android.internal.logging.nano.MetricsProto;
         mDateFontSize.setOnPreferenceChangeListener(this);
     }
 
+     @Override
+    public int getMetricsCategory() {
+        return MetricsProto.MetricsEvent.KOMODO;
+    }
+    
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         ContentResolver resolver = getActivity().getContentResolver();
 
@@ -164,10 +175,6 @@ import com.android.internal.logging.nano.MetricsProto;
 			return true;
         }
         return false;
-    }
-     @Override
-    public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.KOMODO;
     }
 
 }
