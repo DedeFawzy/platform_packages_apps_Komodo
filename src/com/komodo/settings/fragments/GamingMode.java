@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.havoc.settings.fragments;
+package com.komodo.settings.fragments;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -40,8 +40,8 @@ import android.widget.ListView;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.havoc.support.preferences.PackageListAdapter;
-import com.havoc.support.preferences.PackageListAdapter.PackageItem;
+import com.komodo.support.preferences.PackageListAdapter;
+import com.komodo.support.preferences.PackageListAdapter.PackageItem;
 import android.provider.Settings;
 
 import java.util.ArrayList;
@@ -96,13 +96,13 @@ public class GamingMode extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.HAVOC_SETTINGS;
+        return MetricsProto.MetricsEvent.KOMODO_SETTINGS;
     }
 
     @Override
     public int getDialogMetricsCategory(int dialogId) {
         if (dialogId == DIALOG_GAMING_APPS) {
-            return MetricsProto.MetricsEvent.HAVOC_SETTINGS;
+            return MetricsProto.MetricsEvent.KOMODO_SETTINGS;
         }
         return 0;
     }
