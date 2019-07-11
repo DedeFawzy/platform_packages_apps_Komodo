@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.havoc.support.preferences;
+package com.komodo.settings.preferences;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
-import com.havoc.support.preferences.SystemSettingsStore;
+import com.komodo.settings.preferences.SystemSettingsStore;
 
 public class SystemSettingMasterSwitchPreference extends MasterSwitchPreference {
 

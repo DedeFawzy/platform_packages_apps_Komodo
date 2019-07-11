@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.havoc.support.preferences;
+package com.komodo.settings.preferences;
 
 import android.content.Context;
 import android.support.v7.preference.Preference;
@@ -22,7 +22,7 @@ import android.support.v7.preference.PreferenceViewHolder;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.havoc.support.R;
+import com.komodo.settings.R;
 
 public class TwoTargetPreference extends Preference {
 

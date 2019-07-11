@@ -40,8 +40,8 @@ import android.widget.ListView;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import com.komodo.support.preferences.PackageListAdapter;
-import com.komodo.support.preferences.PackageListAdapter.PackageItem;
+import com.komodo.settings.preferences.PackageListAdapter;
+import com.komodo.settings.preferences.PackageListAdapter.PackageItem;
 import android.provider.Settings;
 
 import java.util.ArrayList;
@@ -96,13 +96,13 @@ public class GamingMode extends SettingsPreferenceFragment
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.KOMODO_SETTINGS;
+        return MetricsProto.MetricsEvent.KOMODO;
     }
 
     @Override
     public int getDialogMetricsCategory(int dialogId) {
         if (dialogId == DIALOG_GAMING_APPS) {
-            return MetricsProto.MetricsEvent.KOMODO_SETTINGS;
+            return MetricsProto.MetricsEvent.KOMODO;
         }
         return 0;
     }

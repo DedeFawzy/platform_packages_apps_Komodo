@@ -19,7 +19,7 @@ import android.support.v7.preference.Preference.OnPreferenceChangeListener;
 import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
-import com.komodo.support.preferences.SystemSettingMasterSwitchPreference;
+import com.komodo.settings.preferences.SystemSettingMasterSwitchPreference;
 import java.util.Arrays;
 import java.util.HashSet;
 import com.android.settings.SettingsPreferenceFragment;
