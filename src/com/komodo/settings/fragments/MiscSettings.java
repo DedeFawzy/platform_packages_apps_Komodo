@@ -42,7 +42,7 @@ import com.android.settings.SettingsPreferenceFragment;
         mGamingMode.setOnPreferenceChangeListener(this);
      }
      @Override
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
 	if (preference == mGamingMode) {
             boolean value = (Boolean) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
