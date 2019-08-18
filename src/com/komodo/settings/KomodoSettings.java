@@ -30,7 +30,9 @@ import com.komodo.settings.preferences.Utils;
 import com.android.settings.SettingsPreferenceFragment;
 
 public class KomodoSettings extends SettingsPreferenceFragment {
-	
+
+    private static final String PREF_KEY_CUTOUT = "cutout_settings";
+
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
@@ -38,11 +40,19 @@ public class KomodoSettings extends SettingsPreferenceFragment {
         final String KEY_DEVICE_PART_PACKAGE_NAME = "com.thht.settings.device";
 
         addPreferencesFromResource(R.xml.komodo_settings);
+        Preference mCutoutPref = (Preference) findPreference(PREF_KEY_CUTOUT);
+        if (!hasPhysicalDisplayCutout(getContext()))
+            getPreferenceScreen().removePreference(mCutoutPref);
 
         // DeviceParts
         if (!Utils.isPackageInstalled(getActivity(), KEY_DEVICE_PART_PACKAGE_NAME)) {
             getPreferenceScreen().removePreference(findPreference(KEY_DEVICE_PART));
         }
+    }
+
+    private static boolean hasPhysicalDisplayCutout(Context context) {
+        return context.getResources().getBoolean(
+                com.android.internal.R.bool.config_physicalDisplayCutout);
     }
 
     @Override
