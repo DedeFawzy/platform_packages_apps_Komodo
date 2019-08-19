@@ -44,7 +44,7 @@
     <com.komodo.settings.preferences.CustomSeekBarPreference
         android:key="network_traffic_autohide_threshold"
         android:title="@string/network_traffic_autohide_threshold_title"
-        android:max="10"
+        android:max="@integer/network_traffic_autohide_threshold_max"
         settings:min="0"
         settings:units="" />
 
@@ -68,7 +68,7 @@
      <com.komodo.settings.preferences.CustomSeekBarPreference
             android:key="sysui_rounded_size"
             android:title="@string/corner_radius"
-            android:max="60"
+            android:max="@integer/sysui_rounded_size_max"
             settings:min="0"
             settings:units=""
             android:persistent="false"
@@ -77,8 +77,8 @@
      <com.komodo.settings.preferences.CustomSeekBarPreference
             android:key="sysui_rounded_content_padding"
             android:title="@string/content_padding"
-            android:max="10"
-            settings:min="0"
+            android:max="@integer/sysui_rounded_content_padding_max"
+            settings:min="@integer/sysui_rounded_content_padding_min"
             settings:units=""
             android:persistent="false"
             android:dependency="sysui_rounded_fwvals" />

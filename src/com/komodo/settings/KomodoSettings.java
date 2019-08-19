@@ -19,11 +19,13 @@ package com.komodo.settings;
 import com.android.internal.logging.nano.MetricsProto;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.ContentResolver;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Surface;
-import android.preference.Preference;
+import android.support.v7.preference.Preference;
 import com.android.settings.R;
 import com.komodo.settings.preferences.Utils;
 
