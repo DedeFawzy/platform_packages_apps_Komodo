@@ -13,6 +13,19 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/komodo_settings_title" >
+    <PreferenceCategory
+            android:key="about rom"
+            android:title="@string/komodo_about_rom" >
+    <!-- About us -->
+    <Preference
+        android:key="komodo_about_info"
+        android:title="@string/komodo_about_info"
+        android:summary="@string/komodo_about_summary"
+        android:fragment="com.android.settings.AboutUs" />
+      </PreferenceCategory> 
+      <PreferenceCategory
+        android:key="features"
+        android:title="@string/komodo_feature" >
          <!-- Status Bar -->
         <PreferenceScreen
             android:key="statusbar_category"
@@ -89,4 +102,5 @@
                 android:targetPackage="com.thht.settings.device"
                 android:targetClass="com.thht.settings.device.DeviceSettings"/>
         </Preference>
+      </PreferenceCategory>
  </PreferenceScreen>
