@@ -22,7 +22,9 @@ import android.net.Uri;
 import android.content.Intent;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceCategory;
- import com.android.internal.logging.nano.MetricsProto;
+import com.android.internal.logging.nano.MetricsProto;
+import com.komodo.settings.R;
+
  public class AboutUs extends SettingsPreferenceFragment {
      @Override
     public void onCreate(Bundle savedInstanceState) {
